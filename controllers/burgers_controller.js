@@ -5,8 +5,8 @@ var router = express.Router();
 var burger = require("../models/burger.js");
 
 router.get("/", function(req, res) {
-  res.render("index", hbsObject);
-})
+  res.json("index", hbsObject);
+});
 
 router.get("/", function(req, res) {
     burger.selectAll(function(data) {

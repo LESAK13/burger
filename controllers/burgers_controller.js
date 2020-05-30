@@ -5,14 +5,15 @@ var router = express.Router();
 var burger = require("../models/burger.js");
 
 router.get("/", function(req, res) {
-    burger.selectAll(function(result) {
+    burger.selectAll(function(data) {
       var hbsObject = {
         burgers: data
       };
       console.log(hbsObject);
-      result.render("index", hbsObject);
+      res.render("index", hbsObject);
     });
   });
+
   
   router.post("/api/burgers", function(req, res) {
     burger.insertOne(req.body.burger_name, function(result) {

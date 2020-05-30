@@ -1,0 +1,25 @@
+h1 {
+    text-align: center;
+    font-family: 'Chelsea Market', cursive;
+}
+
+body {
+    background-color: yellow;
+    font-family: 'Chelsea Market', cursive;
+}
+
+.change-eaten {
+    background-color: blue;
+    color: white;
+}
+
+.addBtn {
+    background-color: blue;
+    color: white;
+}
+
+
+
+
+
+

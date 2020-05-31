@@ -17,9 +17,10 @@ var routes = require("./controllers/burgers_controller.js");
 
 app.use(routes);
 
-app.get("/", function(req, res) {
+app.get('/', (req, res) => {
+  res.render('main', {layout : 'index'});
+  });
   
-})
 
 app.listen(PORT, function() {
   console.log("App now listening at localhost:" + PORT);

@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/LESAK13/burger/issues"
   },
-  "homepage": "https://github.com/LESAK13/burger#readme",
+  "homepage": ".",
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^4.0.4",

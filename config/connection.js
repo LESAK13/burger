@@ -1,11 +1,11 @@
 var mysql = require("mysql");
 
 var connection = mysql.createConnection({
-  host: "localhost",
+  host: "us-cdbr-east-05.cleardb.net",
   port: 3306,
-  user: "root",
-  password: "rootpass",
-  database: "burgers_db"
+  user: "b35bcbcb605beb",
+  password: "ed2bd77b",
+  database: "burgers_heroku_4fed1338e7b47c8db"
 });
 
 connection.connect(function(err) {

@@ -39,8 +39,27 @@ First, I set up the environment to follow this structure:
         └── main.handlebars
 ```
 
-I added a partials folder with two blocks in the views folder to help with handlebars.
+After setting up the folders, files and installing my dependencies, I set up the directory with one table which stores all burgers.
 
-After that, I followed the homework assginment read_me and completed all tasks.
+Within the config, folder, with a connection.js file.  I established the connection to my local server.
 
-The app works fine locally, but when I try to view the app through heroku, I am getting an error.
+I then created an orm.js file.  The orm has three functions:
+
+- selecting all burgers from the database.
+
+- inserting a burger into the database.
+
+- updating the burgers devoured condition from false to true.
+
+Within the burger model, I imported the orm that was created and referenced the functions from the orm.
+
+Inside the burger controller, I required, express, router and the burger model  I then have a get route, post route and put route.  The get route stores all burgers into a handlebars object and renders it in the index.html file.  The post route inserts the new burger to the database.  The put route updates the devoured condition of the selected burger.
+
+The handlebars were set up.  A simple main.handlebars file was designed along with the index.handlebars which uses two block handlebar files to return all burgers depending on their "devoured" value.
+
+
+
+
+
+
+
